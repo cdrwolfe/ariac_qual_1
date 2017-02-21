@@ -41,6 +41,8 @@ and finally when it is all up and running, just execute the script in another ta
 
 rosrun ariac_qual_1 /script/ariac_qual_1.py
 
+Make sure it is executable (chmod +x ariac_qual_1.py)
+
 It should now get an order for 5 parts, (2 wrench, 3 cogs). The arm will move to pick up a part (a bit flaky it can take a while) and then move to the left tray and place it down.
 
 Once complete, and all 5 parts are in the tray, the arm returns to the middle, the AGV return command is sent to finish and in the first tab you should see something like this pop up.
