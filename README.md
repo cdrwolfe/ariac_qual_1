@@ -30,9 +30,9 @@ Reload your terminal just in case, I assume that catkin_ws is sourced in bash.sr
 To execute and complete part 'a' of task 1 first:
 
 In one tab load up the gazebo competition using:
-
-rosrun osrf_gear gear.py -f 'catkin_find --share osrf_gear'/config/qual1a.yaml '~/catkin_ws/src/ariac_qual_1/config/qual_1_conf.yaml' 
-
+```
+rosrun osrf_gear gear.py -f `catkin_find --share osrf_gear`/config/qual1a.yaml '~/catkin_ws/src/ariac_qual_1/config/qual_1_conf.yaml' 
+```
 In another tab load up MoveIt! using:
 
 roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch sim:=true
@@ -85,9 +85,9 @@ FIRST! open up the ariac_qual_1.py script and go to line 40-41 and change
  tray = 'Left' to tray = 'Right'
 
 NEXT rerun as before however use this command in the first tab to run the part 'b' task instead.
-
-rosrun osrf_gear gear.py -f 'catkin_find --share osrf_gear'/config/qual1b.yaml '~/catkin_ws/src/ariac_qual_1/config/qual_1_conf.yaml'
-
+```
+rosrun osrf_gear gear.py -f `catkin_find --share osrf_gear`/config/qual1b.yaml '~/catkin_ws/src/ariac_qual_1/config/qual_1_conf.yaml'
+```
 In this task the first part will fall off just before it is placed in the right tray, this is part of the challenge so don't worry, the script knows to go back and start again.
 
 All the best with the competition, it will only get harder from here on out.
